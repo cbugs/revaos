@@ -93,8 +93,32 @@ nav a:hover{
 }
 
 .font-custom{
-    font-family: 'Mea Culpa', cursive;
+  font-family: Art Brewery;
+  src: url('font\art-brewery\Art Brewery.ttf');
+  font-size:80px;
 }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.input-group{
+  width:50%;
+  margin:auto;
+}
+
+
+.form-control{
+  border-radius: 25px;
+}
+
+.btn{
+  border-radius: 25px;
+  background:#55585c!important;
+  border-color:#55585c !important;
+}
+
 
 .head-style h1 {
     text-align: center;
@@ -452,7 +476,7 @@ border-bottom-right-radius: 12px;
 
 .banner{
     /* width: 150px; */
-    height: 250px;    
+    height: 450px;    
     position:relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -463,7 +487,7 @@ border-bottom-right-radius: 12px;
     color:white;
     height:100px;
     width:100%;
-    height:250px;
+    height:450px;
     background:rgba(0,0,0,0.5);
     position:absolute;
     text-align:center;
@@ -480,4 +504,9 @@ border-bottom-right-radius: 12px;
     margin:auto;
     /* border-radius:50%; */
     /* padding:10px; */
+}
+
+.header-foodculture p{
+  text-align:center;
+  font-size:30px;
 }
