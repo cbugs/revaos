@@ -12,7 +12,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #AD7D52;
+    --bs-primary: #333;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -25,11 +25,15 @@
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+body{
+  padding-top: 60px;
+}
+
 .dropdown-toggle::after {
     display: inline-block;
     width: 1.25em;
     line-height: 0;
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
     transition: transform .35s ease;
     transform-origin: 25% 50%;
     border:0;
@@ -93,9 +97,10 @@ nav a:hover{
 }
 
 .font-custom{
-  font-family: Art Brewery;
+  font-family: 'Mea Culpa', cursive;
+  /* font-family: Art Brewery;
   src: url('font\art-brewery\Art Brewery.ttf');
-  font-size:80px;
+  font-size:80px; */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -109,14 +114,20 @@ nav a:hover{
 }
 
 
-.form-control{
-  border-radius: 25px;
+#search-input{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .btn{
-  border-radius: 25px;
+  /* border-radius: 25px;
   background:#55585c!important;
-  border-color:#55585c !important;
+  border-color:#55585c !important; */
+}
+
+#search-button{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 
@@ -136,7 +147,7 @@ nav a:hover{
     margin-top: 5px;
     left: 50%;
     margin-left: -25px;
-    background-color: #AD7D52;
+    background-color: var(--bs-primary);
   }
 
   a{
@@ -316,6 +327,14 @@ nav a:hover{
   }
 }
 
+.social-icons-bar li a{
+  background-color: var(--bs-primary);
+}
+
+.social-icons-bar li a:hover{
+  color: white!important;
+}
+
 nav .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
@@ -334,22 +353,22 @@ nav .dropdown:hover .dropdown-menu {
 }
 
 .cards-listing .card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    /* background-image: url('/images/crispies.jpg'); */
 }
 
 .cards-listing .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-image: url('/images/2.jpg');
 }
 
 
 .cards-listing .card__clock {
     width: 15px;
   vertical-align: middle;
-    fill: #AD7D52;
+    fill: var(--bs-primary);
 }
 .cards-listing .card__time {
     font-size: 12px;
-    color: #AD7D52;
+    color: var(--bs-primary);
     vertical-align: middle;
     margin-left: 5px;
 }
@@ -439,7 +458,7 @@ border-bottom-right-radius: 12px;
 .cards-listing .card__author {
     font-weight: 600;
     text-decoration: none;
-    color: #AD7D52;
+    color: var(--bs-primary);
 }
 
 .cards-listing .card:hover .card__img--hover {
@@ -467,28 +486,59 @@ border-bottom-right-radius: 12px;
 .image-carousel{
     /* width: 150px; */
     /* border-radius:10px; */
-    height: 250px;    
+    height: 200px;
+    width:100%;    
     padding:5px;
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%; */
 }
+.search-bar-toggler{
+  width:40px;
+}
+
+.search-bar-toggler:focus{
+  outline: none!important;
+  /* border: none; */
+  box-shadow: none;
+}
+
+.search-bar{
+  position:absolute;
+  right:0px;
+  border: 1px solid var(--bs-primary);
+  top:40px;
+  opacity:0;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.search-bar.show{
+  opacity:1;
+  max-height: 100px;
+}
 
 .banner{
     /* width: 150px; */
-    height: 450px;    
+    height: 100px;    
     position:relative;
+    /* background:white; */
+    /* position:relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 50%; */
 }
 
 .banner-content{
     color:white;
-    height:100px;
+    /* height:100px; */
     width:100%;
-    height:450px;
-    background:rgba(0,0,0,0.5);
+    /* height:450px; */
+    /* background:rgba(0,0,0,0.5); */
     position:absolute;
     text-align:center;
 }
@@ -509,4 +559,17 @@ border-bottom-right-radius: 12px;
 .header-foodculture p{
   text-align:center;
   font-size:30px;
+}
+
+
+.insta-image{
+  height:100px;
+}
+
+.feature-image{
+  height:120px;
+}
+
+.bg-dark{
+  /* background-color: var(--bs-primary)!important; */
 }

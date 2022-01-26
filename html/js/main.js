@@ -12,20 +12,26 @@ $(document).ready(function() {
 
     document.onscroll = function scroll() {
         if ($(window).scrollTop() >= origOffsetY) {
-            $('.menu').addClass('fixed-top');
+            // $('.menu').addClass('fixed-top');
         } else {
-            $('.menu').removeClass('fixed-top');
+            // $('.menu').removeClass('fixed-top');
         }
     };
 
 
     $('.carousel-home').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
       });
+
+      $(".search-bar-toggler").click(function(){
+          $(".search-bar").toggleClass("show");
+          $(".search-bar-toggler .fas").toggleClass("fa-search");
+          $(".search-bar-toggler .fas").toggleClass("fa-times");
+      })
 
 });
 
