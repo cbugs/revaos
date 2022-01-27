@@ -8,7 +8,13 @@ $(document).ready(function() {
     $('.text-trunc-long').Cuttr({
         //options here
         truncate: 'words',
-        length: 150
+        length: 100
+    });
+
+    $('.text-trunc-medium').Cuttr({
+        //options here
+        truncate: 'words',
+        length: 25
     });
 
 
@@ -24,6 +30,13 @@ $(document).ready(function() {
         }
     };
 
+        $('.carousel-post').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
 
     $('.carousel-home').slick({
         slidesToShow: 4,
