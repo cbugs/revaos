@@ -11,8 +11,8 @@
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
     --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-primary: #333;
+    --bs-gray-dark: #333333;
+    --bs-primary: #8B9A46;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -27,13 +27,15 @@
 
 body{
   padding-top: 60px;
+  background-color: #f2f2f2!important;
+  font-family: 'Raleway', sans-serif;
 }
 
 .dropdown-toggle::after {
     display: inline-block;
     width: 1.25em;
     line-height: 0;
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
     transition: transform .35s ease;
     transform-origin: 25% 50%;
     border:0;
@@ -98,14 +100,16 @@ nav a:hover{
 
 .font-custom{
   font-family: 'Mea Culpa', cursive;
+  /* font-size:80px; */
+  /* font-family: 'Shanti', sans-serif; */
   /* font-family: Art Brewery;
   src: url('font\art-brewery\Art Brewery.ttf');
   font-size:80px; */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .input-group{
@@ -159,7 +163,7 @@ nav a:hover{
     font-style: italic;
     color: #a5a5a5;
     margin-right: 8px;
-    font-family: "Crimson Text",serif;
+    /* font-family: "Crimson Text",serif; */
     float: left;
     /* margin-top: 6px; */
     font-size: 15px;
@@ -435,7 +439,7 @@ border-bottom-right-radius: 12px;
 }
 
 .cards-listing .card__category {
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 2px;
@@ -446,12 +450,13 @@ border-bottom-right-radius: 12px;
 .cards-listing .card__title {
     margin-top: 5px;
     margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    /* font-family: 'Roboto Slab', serif; */
 }
 
 .cards-listing .card__by {
     font-size: 12px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-weight: 500;
 }
 
@@ -547,29 +552,112 @@ border-bottom-right-radius: 12px;
     margin-top:50px;
 }
 
+.logo-text{
+  font-size:70px;
+}
+
 .banner-content img{
     /* border:1px solid #fff; */
-    width:100px;
+    width:85px;
     /* height:100px; */
     margin:auto;
     /* border-radius:50%; */
     /* padding:10px; */
 }
 
-.header-foodculture p{
-  text-align:center;
-  font-size:30px;
+.font-bold{
+  font-weight: bold;
+}
+
+.partial-article .info{
+  position:absolute;
+  bottom:0px;
+  color:var(--bs-default)!important;
+}
+
+.partial-article .info.right{
+  right:20px;
+}
+
+.partial-article .info.left{
+  left:20px;
+}
+
+
+.divider {
+  display: flex;
+  font-family: 'Mea Culpa', cursive;
+  font-size:50px;
+  margin:20px 0px;
+}
+.divider:before, .divider:after {
+  content: "";
+  flex: 1;
+}
+
+.line {
+  align-items: center;
+  /* margin: 1em -1em; */
+}
+.line:before, .line:after {
+  height: 1px;
+  margin: 0 1em;
+}
+
+
+.double-razor:before, .double-razor:after {
+  height: 3px;
+  box-shadow: 0 -0.5px 0 black, 0 0.5px 0 black;
+  border-width: 0;
 }
 
 
 .insta-image{
-  height:100px;
+  height:75px;
 }
 
 .feature-image{
   height:120px;
 }
 
-.bg-dark{
+.menu{
   /* background-color: var(--bs-primary)!important; */
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: var(--bs-primary);
+  color: white!important;
+}
+
+.social-icons-sm a{
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: #999;
+  font-size:12px;
+  margin-right:0px;
+}
+
+.carousel-caption h5{
+  background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-weight: bold;
+    /* width:auto; */
+    padding: 10px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-caption {
+  position: absolute;
+  /* right: 15%; */
+  bottom: -4px;
+  border-radius: 10px;
+  left: 0px;
+  padding: 0px 5px;
+  width: 100%;
+  /* padding-top: 1.25rem; */
+  /* padding-bottom: 1.25rem; */
+  color: #fff;
+  text-align: center;
 }

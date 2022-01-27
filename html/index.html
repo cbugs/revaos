@@ -22,18 +22,21 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet"> -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Theme CSS -->
+    
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Raleway:wght@300&family=Shanti&display=swap" rel="stylesheet">
+
+<!-- Theme CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="bg-light">
+  <body>
     <div class="container-fluid">
 		<header class="g-0">
-			<nav class="navbar navbar-expand-lg fixed-top navbar-dark menu p-0 bg-dark">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-light menu p-0 bg-light">
 				<div class="container-fluid">
 					<!-- <a href="#">					 -->
 						<!-- <a class="navbar-brand font-custom fs-2" href="#">Revaos</a> -->
@@ -43,7 +46,7 @@
 					<span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav mx-auto">
+					<ul class="navbar-nav me-auto">
 					  <!-- <li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 					  </li> -->
@@ -74,7 +77,20 @@
 						<a class="nav-link" href="#">Contact</a>
 					  </li>
 					</ul>
+
+					<div class="text-center pe-3">
+						<ul class="social-icons social-icons-sm">
+							<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+							<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+						  </ul>
+					</div>
+
 					<button class="btn btn-primary rounded-0 search-bar-toggler" type="button"><i class="fas fa-search"></i></button>
+					
+					
+					
 					<form class="d-flex search-bar">
 						<input class="form-control rounded-0 border-0" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-default rounded-0" type="submit"><i class="fas fa-search"></i></button>
@@ -85,8 +101,9 @@
 
 			<div class="banner">
 				<div class="banner-content">
+
 					<!-- <h1 class="font-custom text-primary">Taste new horizons</h1> -->
-					<h4><img src="images/logo-black.png"/></h4>
+					<h4 class="font-custom text-dark logo-text"><img src="images/logo-black.png"/></h4>
 
 					<!-- <form class="d-flex">
 						<input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
@@ -104,16 +121,25 @@
 			</div>	
 		</header>
 
-		<div class="header-foodculture"><br>
-			<p class="font-custom">Food Culture</p>
+		<div class="w-100">
+
+			<div class="divider line double-razor">
+				Food Culture
+				<!-- <p class="font-custom">Food Culture</p> -->
+			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-6">
+				
+			</div>
+		</div>
 		<div class="carousel-home">
 			
 			
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/gastronomy.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/gastronomy.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Gastronomy</h5>
 					  </div> 
@@ -123,7 +149,7 @@
 
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/street.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/street.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Street Food</h5>
 					</div> 
@@ -132,7 +158,7 @@
 
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/chinese.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/chinese.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Chinese</h5>
 					  </div> 
@@ -142,7 +168,7 @@
 
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/indian.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/indian.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Indian</h5>
 					  </div> 
@@ -152,7 +178,7 @@
 
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/korean.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/korean.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Korean</h5>
 					  </div> 
@@ -162,7 +188,7 @@
 
 			<div class="carousel-home-item position-relative">
 				<a href="#">
-					<img class="image-carousel image-rounded" src="/images/mexican.jpg" clas="w-100" />
+					<img class="image-carousel image-rounded" src="/images/mexican.jpg" class="w-100" />
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Mexican</h5>
 					  </div> 
@@ -183,8 +209,45 @@
 
 		  </div>
 
-		  <div class="header-foodculture"><br>
-			<p class="font-custom">Latest Posts</p>
+		  <div class="divider line double-razor">
+			Best Cuisine
+			<!-- <p class="font-custom">Food Culture</p> -->
+		</div>
+		  
+		 <div class="row g-0 partial-article">
+				<div class="col-6">
+					<img src="/images/4.jpg" class="img-fluid w-100"/>
+				</div>
+				<div class="col-6 p-4 position-relative">
+					<h1 class="text-center font-bold">Maintain the cuisine</h1>
+					<p class="text-trunc-long p-0 m-0 d-inline">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+					<a href="#" class="text-primary d-inline">Read More</a>
+					<div class="info left">
+						
+						<i class="fas fa-comments"></i>0 Comments
+						
+					
+					
+					</div>
+
+					<div class="info right">
+						
+		
+						<ul class="social-icons social-icons-sm">
+							<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+							<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+						  </ul>
+					
+					
+					</div>
+				</div>
+		</div>
+
+		  <div class="divider line double-razor">
+			Latest Posts
+			<!-- <p class="font-custom">Food Culture</p> -->
 		</div>
 <!-- 		
 		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -226,6 +289,8 @@
 			</button>
 		  </div>
 		 -->
+
+
       	<div class="row flex-nowrap">
 
 		
@@ -253,6 +318,17 @@
 								  <span class="card__category"> Gastronomy</span>
 								  <h3 class="card__title">White Russian Krispies</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+								
+								
+					<div class="pt-3">
+						<ul class="social-icons social-icons-sm">
+							<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+							<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+						  </ul>
+					</div>
+
 								</div>
 							  </article>
 						</div>
@@ -276,6 +352,16 @@
 								  <span class="card__category"> Indian</span>
 								  <h3 class="card__title">Chicken Biryani</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+								
+								  <div class="pt-3">
+									<ul class="social-icons social-icons-sm">
+										<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+									  </ul>
+								</div>
+			
 								</div>
 							  </article>
 						</div>
@@ -298,6 +384,16 @@
 								  <span class="card__category"> Korean</span>
 								  <h3 class="card__title">Spicy Ramen</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+								
+								  <div class="pt-3">
+									<ul class="social-icons social-icons-sm">
+										<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+									  </ul>
+								</div>
+			
 								</div>
 							  </article>
 						</div>
@@ -321,6 +417,16 @@
 								  <span class="card__category"> Mexican</span>
 								  <h3 class="card__title">Homemade Tacos</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+								
+								  <div class="pt-3">
+									<ul class="social-icons social-icons-sm">
+										<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+									  </ul>
+								</div>
+			
 								</div>
 							  </article>
 						</div>
@@ -344,6 +450,16 @@
 								  <span class="card__category"> Chinese</span>
 								  <h3 class="card__title">Chinese Chicken Drumstick</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+							
+								  <div class="pt-3">
+									<ul class="social-icons social-icons-sm">
+										<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+									  </ul>
+								</div>
+			
 								</div>
 							  </article>
 						</div>
@@ -367,6 +483,16 @@
 								  <span class="card__category"> Italian</span>
 								  <h3 class="card__title">Pizza</h3>
 								  <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+								
+								  <div class="pt-3">
+									<ul class="social-icons social-icons-sm">
+										<li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>   
+									  </ul>
+								</div>
+			
 								</div>
 							  </article>
 						</div>

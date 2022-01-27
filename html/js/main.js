@@ -5,6 +5,12 @@ $(document).ready(function() {
         length: 15
     });
 
+    $('.text-trunc-long').Cuttr({
+        //options here
+        truncate: 'words',
+        length: 150
+    });
+
 
 
     var menu = $('.menu');
