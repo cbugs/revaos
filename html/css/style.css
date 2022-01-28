@@ -195,11 +195,14 @@ nav a:hover{
 
 .site-footer
 {
-  background-color:var(--bs-primary);
-  padding:45px 0 20px;
+  /* background-color:var(--bs-primary); */
+  background-color: #fff!important;
+  /* padding:45px 0 20px; */
   font-size:15px;
   line-height:24px;
-  color:#ffffff;
+  /* color:#ffffff; */
+  color: rgb(102, 102, 102);
+
 }
 .site-footer hr
 {
@@ -220,7 +223,8 @@ nav a:hover{
 }
 .site-footer a
 {
-  color:#ffffff;
+  /* color:#ffffff; */
+  color: rgb(102, 102, 102);
 }
 .site-footer a:hover
 {
@@ -833,4 +837,13 @@ border-bottom-right-radius: 12px;
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.text-center {
+  text-align: right!important;
+}
+
+.col-lg-7 {
+  flex: 0 0 auto;
+ 
 }
