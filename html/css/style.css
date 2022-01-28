@@ -829,3 +829,8 @@ border-bottom-right-radius: 12px;
   width:300px!important;
   margin:auto;
 } */
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
